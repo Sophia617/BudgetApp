@@ -3,11 +3,13 @@ class Controller {
     incomeArray: IItemList;
     expenseArray: IItemList;
     budget: Budget;
+    displayBudget: IDiplay;
     
     constructor(){
         this.incomeArray = new IncomeArray();
         this.expenseArray = new ExpenseArray();
         this.budget = new Budget();
+        this.displayBudget = new DisplayBudget(this.budget);
     }
     
     // Add Item to the Array List
@@ -38,14 +40,20 @@ class Controller {
     
     // Notify Budget Object for change
     public notifyBudgetForAdding (type:string, value: number){
+        // Update Total Income in the Budget Object
         if (type === 'inc') {
-           this.budget.updateIncome(value);
+           this.budget.updateTotalIncome(value);
         }
-        
+        // Update TotalExpense in the Budget Object
         if (type === 'exp') {
-            this.budget.updateExpense(value);
+            this.budget.updateTotalExpense(value);
         }
+        this.displayBudgetField();
     }
     
-
+    // Display on UI
+    public displayBudgetField(){
+         this.displayBudget.display();
+    }
+    
 }

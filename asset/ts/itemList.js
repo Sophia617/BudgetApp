@@ -4,9 +4,8 @@ var IncomeArray = /** @class */ (function () {
         this.incomeList = [];
         this.displayIncome = new DisplayIncome();
     }
-    // Add Item to the Income Array
+    // Create Income Item and push to the Income Array
     IncomeArray.prototype.addItem = function (description, value) {
-        // Create Income Item and push to the Array
         var newIncomeItem = new IncomeItem(description, value);
         var i = this.incomeList.length;
         this.incomeList.push(newIncomeItem);
@@ -28,14 +27,12 @@ var ExpenseArray = /** @class */ (function () {
         this.expenseList = [];
         this.displayExpense = new DisplayExpense();
     }
-    // Add Item to the Expense Array
+    // Create Expense Item and push it to the Expense Array
     ExpenseArray.prototype.addItem = function (description, value) {
-        // Create Expense Item and push it to the Array
         var newExpenseItem = new ExpenseItem(description, value);
         var i = this.expenseList.length;
         this.expenseList.push(newExpenseItem);
         console.log(this.expenseList[i]);
-        //notify
     };
     // remove Item to the Expense Array
     ExpenseArray.prototype.removeItem = function (item) {

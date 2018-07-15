@@ -1,24 +1,41 @@
 var Budget = /** @class */ (function () {
-    //construction
+    // Constructor
     function Budget() {
-        this.displayBudget = new DisplayBudget();
         this._totalIncome = 0;
         this._totalExpense = 0;
         this._totalBudget = 0;
     }
-    //Methods to calculate budget
-    Budget.prototype.updateIncome = function (incomeValue) {
+    // Methods to calculate budget
+    Budget.prototype.updateTotalIncome = function (incomeValue) {
         this._totalIncome += incomeValue;
         this._totalBudget += incomeValue;
-        console.log("Total Income: + " + this._totalIncome + " Total Budget " + this._totalBudget + " ");
+        this.calcExpense();
     };
-    Budget.prototype.updateExpense = function (expenseValue) {
+    Budget.prototype.updateTotalExpense = function (expenseValue) {
         this._totalExpense += expenseValue;
         this._totalBudget -= expenseValue;
-        console.log("Total Expense: - " + this._totalExpense + " Total Budget " + this._totalBudget);
+        this.calcExpense();
     };
-    //Display the data on page
-    Budget.prototype.display = function () {
+    Budget.prototype.calcExpense = function () {
+        if (this._totalExpense != 0) {
+            this._expensePercentage = this._totalIncome / this._totalExpense;
+        }
+        else {
+            this._expensePercentage = 0;
+        }
+    };
+    //Getter
+    Budget.prototype.getTotalIncome = function () {
+        return this._totalIncome;
+    };
+    Budget.prototype.getTotalExpense = function () {
+        return this._totalExpense;
+    };
+    Budget.prototype.getTotalBudget = function () {
+        return this._totalBudget;
+    };
+    Budget.prototype.getExpensePercent = function () {
+        return this._expensePercentage;
     };
     return Budget;
 }());

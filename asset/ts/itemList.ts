@@ -8,12 +8,10 @@ class IncomeArray implements IItemList {
     
     // Instance Variable Field
     private incomeList: Array<IItem> =[];
-    private budget: Budget;
     private displayIncome = new DisplayIncome();
-
-    // Add Item to the Income Array
+    
+    // Create Income Item and push to the Income Array
     public addItem(description: string, value: number):void {
-        // Create Income Item and push to the Array
         let newIncomeItem = new IncomeItem(description,value);
         let i = this.incomeList.length;
         this.incomeList.push(newIncomeItem);
@@ -36,19 +34,14 @@ class ExpenseArray implements IItemList {
     
     // Instance Variable Field
     private expenseList: Array<IItem> = [];
-    private budget: Budget;
     private displayExpense = new DisplayExpense();
     
-    // Add Item to the Expense Array
+    // Create Expense Item and push it to the Expense Array
     public addItem(description, value):void {
-        
-        // Create Expense Item and push it to the Array
         let newExpenseItem = new ExpenseItem(description, value);
         let i = this.expenseList.length;
         this.expenseList.push(newExpenseItem);
         console.log(this.expenseList[i]);
-        
-        //notify
     }
     
     
