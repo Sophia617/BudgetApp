@@ -6,6 +6,8 @@ let totalBudgetField;
 let totalIncomeField;
 let totalExpenseField;
 let totalExpensePercentField;
+let incomeField;
+let expenseField;
 
 function initialiseDOM(){
    
@@ -20,5 +22,9 @@ function initialiseDOM(){
     totalIncomeField = document.querySelector('.budget__income--value');
     totalExpenseField = document.querySelector('.budget__expenses--value');
     totalExpensePercentField = document.querySelector('.budget__expenses--percentage');
+    
+    // Income Field DOM
+    incomeField = document.querySelector('.income__list');
+    expenseField = document.querySelector('.expenses__list')
     
 }

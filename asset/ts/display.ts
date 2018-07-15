@@ -3,14 +3,60 @@ interface IDiplay {
 }
 
 class DisplayIncome implements IDiplay {
-    public display(): void {
     
+    incomeArray: IItemList;
+    
+    constructor(incomeArray: IItemList){
+        this.incomeArray = incomeArray;
+    }
+    
+    public display(): void {
+        // Get Income Item
+        let id = this.incomeArray.getID();
+        let description = this.incomeArray.getDescription();
+        let value = this.incomeArray.getValue();
+
+        // Display Income Item
+        incomeField.insertAdjacentHTML('afterend', `
+            <div class="item clearfix" id="income-${id}">
+                <div class="item__description">${description}</div>
+                <div class="right clearfix">
+                     <div class="item__value">+ ${value}</div>
+                     <div class="item__delete">
+                            <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                      </div>
+                    </div>
+             </div>
+        `)
     }
 }
 
 class DisplayExpense implements IDiplay {
-    public display(): void {
     
+    expenseArray: IItemList;
+    
+    constructor(expenseArray: IItemList){
+        this.expenseArray = expenseArray;
+    }
+    
+    public display(): void {
+        // Get Expense Item
+        let id = this.expenseArray.getID();
+        let description = this.expenseArray.getDescription();
+        let value = this.expenseArray.getValue();
+        
+        // Display Expense Item
+        expenseField.insertAdjacentHTML('afterend', `
+            <div class="item clearfix" id="expense-${id}">
+                <div class="item__description">${description}</div>
+                <div class="right clearfix">
+                     <div class="item__value">- ${value}</div>
+                     <div class="item__delete">
+                            <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                      </div>
+                    </div>
+             </div>
+        `)
     }
 }
 
@@ -39,6 +85,6 @@ class DisplayBudget implements IDiplay {
         // Display Total Income and Expense Field
         totalIncomeField.innerHTML = `+ ${(totalIncome).toFixed(2)}`;
         totalExpenseField.innerHTML = `- ${(totalExpense).toFixed(2)}`;
-        totalExpensePercentField.innerHTML = `${expPercent}%`;
+        totalExpensePercentField.innerHTML = `${(expPercent).toFixed(1)}%`;
     }
 }                                            
