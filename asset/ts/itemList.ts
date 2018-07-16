@@ -1,6 +1,6 @@
 interface IItemList {
     addItem (description: string, value: number);
-    removeItem (item: IItem);
+    removeItem (id: number);
     getID();
     getDescription();
     getValue();
@@ -20,8 +20,8 @@ class IncomeArray implements IItemList {
     }
     
     // Remove Item to the Expense Array
-    public removeItem(item: IItem): void {
-    
+    public removeItem(id: number): void {
+        
     }
     
     // Getter
@@ -52,7 +52,7 @@ class ExpenseArray implements IItemList {
     }
     
     // remove Item to the Expense Array
-    public removeItem(item: IItem): void {
+    public removeItem(id: number): void {
     
     }
     

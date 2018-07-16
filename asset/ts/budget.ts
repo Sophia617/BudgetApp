@@ -1,7 +1,6 @@
 class Budget {
     
     // Instance Variables Field
-    displayBudget: IDiplay;
     private _totalIncome: number;
     private _totalExpense: number;
     private _totalBudget: number;
@@ -19,26 +18,26 @@ class Budget {
     public updateTotalIncome(incomeValue: number): void {
        this._totalIncome += incomeValue;
        this._totalBudget +=incomeValue;
-       this.calcExpense();
+       this.calcExpensePercentage();
     }
     
     public updateTotalExpense(expenseValue: number): void {
-        this._totalExpense += expenseValue;                                                                                                                               
+        this._totalExpense += expenseValue;
         this._totalBudget -= expenseValue;
-        this.calcExpense();
+        this.calcExpensePercentage();
     }
     
-    public calcExpense(){
+    public calcExpensePercentage(){
         
         if ( this._totalExpense!=0) {
-            this._expensePercentage= this._totalIncome/this._totalExpense;
+            this._expensePercentage= (this._totalExpense/this._totalIncome)*100;
         }
         else {
            this._expensePercentage = 0;
         }
     }
     
-    //Getter
+    // Getter
     public getTotalIncome (){
         return this._totalIncome;
     }
@@ -51,5 +50,4 @@ class Budget {
     public getExpensePercent (){
         return this._expensePercentage;
     }
-    
 }

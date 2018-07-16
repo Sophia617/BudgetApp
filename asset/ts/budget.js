@@ -9,22 +9,22 @@ var Budget = /** @class */ (function () {
     Budget.prototype.updateTotalIncome = function (incomeValue) {
         this._totalIncome += incomeValue;
         this._totalBudget += incomeValue;
-        this.calcExpense();
+        this.calcExpensePercentage();
     };
     Budget.prototype.updateTotalExpense = function (expenseValue) {
         this._totalExpense += expenseValue;
         this._totalBudget -= expenseValue;
-        this.calcExpense();
+        this.calcExpensePercentage();
     };
-    Budget.prototype.calcExpense = function () {
+    Budget.prototype.calcExpensePercentage = function () {
         if (this._totalExpense != 0) {
-            this._expensePercentage = this._totalIncome / this._totalExpense;
+            this._expensePercentage = (this._totalExpense / this._totalIncome) * 100;
         }
         else {
             this._expensePercentage = 0;
         }
     };
-    //Getter
+    // Getter
     Budget.prototype.getTotalIncome = function () {
         return this._totalIncome;
     };

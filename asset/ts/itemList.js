@@ -10,7 +10,7 @@ var IncomeArray = /** @class */ (function () {
         this._incomeList.push(newIncomeItem);
     };
     // Remove Item to the Expense Array
-    IncomeArray.prototype.removeItem = function (item) {
+    IncomeArray.prototype.removeItem = function (id) {
     };
     // Getter
     IncomeArray.prototype.getID = function () {
@@ -36,7 +36,7 @@ var ExpenseArray = /** @class */ (function () {
         this._expenseList.push(newExpenseItem);
     };
     // remove Item to the Expense Array
-    ExpenseArray.prototype.removeItem = function (item) {
+    ExpenseArray.prototype.removeItem = function (id) {
     };
     //Getter
     ExpenseArray.prototype.getID = function () {

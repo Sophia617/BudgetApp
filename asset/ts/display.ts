@@ -1,8 +1,9 @@
 interface IDiplay {
     display(): void;
+    removeDisplay(id: string): void;
 }
 
-class DisplayIncome implements IDiplay {
+class DisplayIncomeItem implements IDiplay {
     
     incomeArray: IItemList;
     
@@ -10,6 +11,7 @@ class DisplayIncome implements IDiplay {
         this.incomeArray = incomeArray;
     }
     
+    // Display Income Items on UI
     public display(): void {
         // Get Income Item
         let id = this.incomeArray.getID();
@@ -29,9 +31,15 @@ class DisplayIncome implements IDiplay {
              </div>
         `)
     }
+    
+    // Remove Income Items on UI
+    public removeDisplay(idElement: string): void {
+        let elem = document.getElementById(`${idElement}`);
+        elem.remove();
+    }
 }
 
-class DisplayExpense implements IDiplay {
+class DisplayExpenseItem implements IDiplay {
     
     expenseArray: IItemList;
     
@@ -39,6 +47,7 @@ class DisplayExpense implements IDiplay {
         this.expenseArray = expenseArray;
     }
     
+    // Display Expense Items on UI
     public display(): void {
         // Get Expense Item
         let id = this.expenseArray.getID();
@@ -58,6 +67,13 @@ class DisplayExpense implements IDiplay {
              </div>
         `)
     }
+    
+    // Remove Expense Items on UI
+    public removeDisplay(idElement: string): void {
+        let elem = document.getElementById(`${idElement}`);
+        elem.remove();
+    }
+    
 }
 
 class DisplayBudget implements IDiplay {
@@ -87,4 +103,6 @@ class DisplayBudget implements IDiplay {
         totalExpenseField.innerHTML = `- ${(totalExpense).toFixed(2)}`;
         totalExpensePercentField.innerHTML = `${(expPercent).toFixed(1)}%`;
     }
+    
+    public removeDisplay(idElement: string): void { }
 }                                            

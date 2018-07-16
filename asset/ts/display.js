@@ -1,8 +1,9 @@
-var DisplayIncome = /** @class */ (function () {
-    function DisplayIncome(incomeArray) {
+var DisplayIncomeItem = /** @class */ (function () {
+    function DisplayIncomeItem(incomeArray) {
         this.incomeArray = incomeArray;
     }
-    DisplayIncome.prototype.display = function () {
+    // Display Income Items on UI
+    DisplayIncomeItem.prototype.display = function () {
         // Get Income Item
         var id = this.incomeArray.getID();
         var description = this.incomeArray.getDescription();
@@ -10,13 +11,19 @@ var DisplayIncome = /** @class */ (function () {
         // Display Income Item
         incomeField.insertAdjacentHTML('afterend', "\n            <div class=\"item clearfix\" id=\"income-" + id + "\">\n                <div class=\"item__description\">" + description + "</div>\n                <div class=\"right clearfix\">\n                     <div class=\"item__value\">+ " + value + "</div>\n                     <div class=\"item__delete\">\n                            <button class=\"item__delete--btn\"><i class=\"ion-ios-close-outline\"></i></button>\n                      </div>\n                    </div>\n             </div>\n        ");
     };
-    return DisplayIncome;
+    // Remove Income Items on UI
+    DisplayIncomeItem.prototype.removeDisplay = function (idElement) {
+        var elem = document.getElementById("" + idElement);
+        elem.remove();
+    };
+    return DisplayIncomeItem;
 }());
-var DisplayExpense = /** @class */ (function () {
-    function DisplayExpense(expenseArray) {
+var DisplayExpenseItem = /** @class */ (function () {
+    function DisplayExpenseItem(expenseArray) {
         this.expenseArray = expenseArray;
     }
-    DisplayExpense.prototype.display = function () {
+    // Display Expense Items on UI
+    DisplayExpenseItem.prototype.display = function () {
         // Get Expense Item
         var id = this.expenseArray.getID();
         var description = this.expenseArray.getDescription();
@@ -24,7 +31,12 @@ var DisplayExpense = /** @class */ (function () {
         // Display Expense Item
         expenseField.insertAdjacentHTML('afterend', "\n            <div class=\"item clearfix\" id=\"expense-" + id + "\">\n                <div class=\"item__description\">" + description + "</div>\n                <div class=\"right clearfix\">\n                     <div class=\"item__value\">- " + value + "</div>\n                     <div class=\"item__delete\">\n                            <button class=\"item__delete--btn\"><i class=\"ion-ios-close-outline\"></i></button>\n                      </div>\n                    </div>\n             </div>\n        ");
     };
-    return DisplayExpense;
+    // Remove Expense Items on UI
+    DisplayExpenseItem.prototype.removeDisplay = function (idElement) {
+        var elem = document.getElementById("" + idElement);
+        elem.remove();
+    };
+    return DisplayExpenseItem;
 }());
 var DisplayBudget = /** @class */ (function () {
     function DisplayBudget(budget) {
@@ -48,5 +60,6 @@ var DisplayBudget = /** @class */ (function () {
         totalExpenseField.innerHTML = "- " + (totalExpense).toFixed(2);
         totalExpensePercentField.innerHTML = (expPercent).toFixed(1) + "%";
     };
+    DisplayBudget.prototype.removeDisplay = function (idElement) { };
     return DisplayBudget;
 }());
