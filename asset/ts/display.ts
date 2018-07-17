@@ -73,7 +73,6 @@ class DisplayExpenseItem implements IDiplay {
         let elem = document.getElementById(`${idElement}`);
         elem.remove();
     }
-    
 }
 
 class DisplayBudget implements IDiplay {

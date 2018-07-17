@@ -15,15 +15,33 @@ class Budget {
     }
     
     // Methods to calculate budget
-    public updateTotalIncome(incomeValue: number): void {
-       this._totalIncome += incomeValue;
-       this._totalBudget +=incomeValue;
+    public updateTotalIncome(type: string, incomeValue: number): void {
+        
+        if (type === 'inc') {
+            console.log('i am adding ITem to budget');
+            this._totalIncome += incomeValue;
+            this._totalBudget += incomeValue;
+        }
+        
+        if (type === 'income') {
+            console.log ('im removing my income item in budget');
+            this._totalIncome -= incomeValue;
+            this._totalBudget -= incomeValue;
+        }
        this.calcExpensePercentage();
     }
     
-    public updateTotalExpense(expenseValue: number): void {
-        this._totalExpense += expenseValue;
-        this._totalBudget -= expenseValue;
+    public updateTotalExpense(type: string, expenseValue: number): void {
+        if (type === 'exp'){
+            this._totalExpense += expenseValue;
+            this._totalBudget -= expenseValue;
+        }
+        
+        if (type === 'expense') {
+            this._totalExpense -= expenseValue;
+            this._totalBudget += expenseValue;
+        }
+        
         this.calcExpensePercentage();
     }
     

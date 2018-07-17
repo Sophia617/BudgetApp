@@ -33,27 +33,32 @@ var Controller = /** @class */ (function () {
         var arrayOfIdEle = idElement.split('-');
         var type = arrayOfIdEle[0];
         var id = parseInt(arrayOfIdEle[1]);
+        var itemValue;
         if (type === 'income') {
-            this.incomeArray.removeItem(id);
+            itemValue = this.incomeArray.removeItem(id);
             this.displayDeleteIncomeItem(idElement);
         }
         if (type === 'expense') {
-            this.expenseArray.removeItem(id);
+            itemValue = this.expenseArray.removeItem(id);
             this.displayDeleteExpenseItem(idElement);
         }
+        // Notify Budget For change in ItemArray
+        this.updateBudget(type, itemValue);
     };
     /*******************************************
      *             BUDGET FIELD
      * *****************************************/
     // Notify Budget Object for change
     Controller.prototype.updateBudget = function (type, value) {
+        console.log(type + ' ' + value);
+        console.log(type === 'income');
         // Update Total Income in the Budget Object
-        if (type === 'inc') {
-            this.budget.updateTotalIncome(value);
+        if (type === 'inc' || 'income') {
+            this.budget.updateTotalIncome(type, value);
         }
         // Update TotalExpense in the Budget Object
-        if (type === 'exp') {
-            this.budget.updateTotalExpense(value);
+        if (type === 'exp' || 'expense') {
+            this.budget.updateTotalExpense(type, value);
         }
         this.displayBudgetField();
     };

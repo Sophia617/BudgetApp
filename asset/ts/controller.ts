@@ -43,17 +43,21 @@ class Controller {
     // Remove Item in the Array List
     public removeItem (idElement: string) {
         let arrayOfIdEle = idElement.split('-');
-        let type = arrayOfIdEle[0];
+        let type: string = arrayOfIdEle[0];
         let id = parseInt(arrayOfIdEle[1]);
+        let itemValue: number;
         
         if (type === 'income') {
-            this.incomeArray.removeItem(id);
+            itemValue = this.incomeArray.removeItem(id);
             this.displayDeleteIncomeItem(idElement);
         }
         if (type === 'expense') {
-            this.expenseArray.removeItem(id);
+            itemValue = this.expenseArray.removeItem(id);
             this.displayDeleteExpenseItem(idElement);
         }
+    
+        // Notify Budget For change in ItemArray
+        this.updateBudget(type, itemValue);
     }
     
     /*******************************************
@@ -62,13 +66,17 @@ class Controller {
     
     // Notify Budget Object for change
     public updateBudget (type:string, value: number){
+    
+        console.log(type + ' ' + value);
+        console.log(type ==='income') ;
+        
         // Update Total Income in the Budget Object
-        if (type === 'inc') {
-           this.budget.updateTotalIncome(value);
+        if (type === 'inc' || 'income') {
+           this.budget.updateTotalIncome(type, value);
         }
         // Update TotalExpense in the Budget Object
-        if (type === 'exp') {
-            this.budget.updateTotalExpense(value);
+        if (type === 'exp'|| 'expense') {
+            this.budget.updateTotalExpense(type, value);
         }
         this.displayBudgetField();
     }

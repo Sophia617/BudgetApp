@@ -3,19 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="9dd50fe4-c76a-4db3-8da0-99d28cdb67a2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ts/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/app.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asset/ts/budget.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/budget.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asset/ts/budget.ts" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/budget.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asset/ts/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asset/ts/controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ts/display.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/display.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asset/ts/display.ts" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/display.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ts/helperDOM.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/helperDOM.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ts/helperDOM.ts" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/helperDOM.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/ts/item.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/item.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asset/ts/item.ts" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/item.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asset/ts/itemList.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/itemList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asset/ts/itemList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/itemList.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1200">
-              <caret line="80" column="71" lean-forward="true" selection-start-line="80" selection-start-column="71" selection-end-line="80" selection-end-column="71" />
+            <state relative-caret-position="172">
+              <caret line="79" column="89" lean-forward="true" selection-start-line="79" selection-start-column="89" selection-end-line="79" selection-end-column="89" />
             </state>
           </provider>
         </entry>
@@ -41,8 +37,8 @@
       <file leaf-file-name="helperDOM.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/asset/ts/helperDOM.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+            <state relative-caret-position="150">
+              <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -50,8 +46,8 @@
       <file leaf-file-name="app.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/asset/ts/app.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+            <state relative-caret-position="75">
+              <caret line="5" column="77" lean-forward="true" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -59,8 +55,8 @@
       <file leaf-file-name="controller.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/asset/ts/controller.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="63" lean-forward="true" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+            <state relative-caret-position="249">
+              <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -68,17 +64,17 @@
       <file leaf-file-name="item.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/asset/ts/item.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="68" lean-forward="true" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
+            <state relative-caret-position="300">
+              <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="itemList.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="itemList.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/asset/ts/itemList.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="18" column="73" lean-forward="true" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
+            <state relative-caret-position="293">
+              <caret line="72" column="15" lean-forward="true" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
             </state>
           </provider>
         </entry>
@@ -86,8 +82,8 @@
       <file leaf-file-name="budget.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/asset/ts/budget.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2">
-              <caret line="14" column="70" lean-forward="true" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+            <state relative-caret-position="103">
+              <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -95,8 +91,8 @@
       <file leaf-file-name="display.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/asset/ts/display.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+            <state relative-caret-position="99">
+              <caret line="40" column="73" lean-forward="true" selection-start-line="40" selection-start-column="73" selection-end-line="40" selection-end-column="73" />
             </state>
           </provider>
         </entry>
@@ -137,14 +133,14 @@
         <option value="$PROJECT_DIR$/asset/js/item.js" />
         <option value="$PROJECT_DIR$/asset/ts/constroller.ts" />
         <option value="$PROJECT_DIR$/asset/css/style.css" />
-        <option value="$PROJECT_DIR$/asset/ts/app.ts" />
-        <option value="$PROJECT_DIR$/asset/ts/itemList.ts" />
-        <option value="$PROJECT_DIR$/asset/ts/item.ts" />
-        <option value="$PROJECT_DIR$/asset/ts/controller.ts" />
-        <option value="$PROJECT_DIR$/asset/ts/display.ts" />
-        <option value="$PROJECT_DIR$/asset/ts/budget.ts" />
         <option value="$PROJECT_DIR$/asset/ts/helperDOM.ts" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/asset/ts/item.ts" />
+        <option value="$PROJECT_DIR$/asset/ts/display.ts" />
+        <option value="$PROJECT_DIR$/asset/ts/app.ts" />
+        <option value="$PROJECT_DIR$/asset/ts/itemList.ts" />
+        <option value="$PROJECT_DIR$/asset/ts/controller.ts" />
+        <option value="$PROJECT_DIR$/asset/ts/budget.ts" />
       </list>
     </option>
   </component>
@@ -158,8 +154,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="123" />
-    <option name="y" value="98" />
+    <option name="x" value="86" />
+    <option name="y" value="28" />
     <option name="width" value="1317" />
     <option name="height" value="802" />
   </component>
@@ -252,15 +248,15 @@
       <workItem from="1531131916209" duration="266000" />
       <workItem from="1531624666590" duration="11450000" />
       <workItem from="1531639979648" duration="17958000" />
-      <workItem from="1531746334081" duration="2262000" />
+      <workItem from="1531746334081" duration="16073000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63780000" />
+    <option name="totallyTimeSpent" value="77591000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="123" y="98" width="1317" height="802" extended-state="0" />
+    <frame x="86" y="28" width="1317" height="802" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
@@ -318,6 +314,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -478,59 +479,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/asset/ts/display.ts">
+    <entry file="file://$PROJECT_DIR$/asset/ts/helperDOM.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="72" lean-forward="true" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asset/ts/budget.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2">
-          <caret line="14" column="70" lean-forward="true" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asset/ts/itemList.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="18" column="73" lean-forward="true" selection-start-line="18" selection-start-column="73" selection-end-line="18" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asset/ts/item.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="68" lean-forward="true" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/asset/ts/controller.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="63" lean-forward="true" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+        <state relative-caret-position="150">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/asset/ts/app.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="33" lean-forward="true" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+        <state relative-caret-position="75">
+          <caret line="5" column="77" lean-forward="true" selection-start-line="5" selection-start-column="77" selection-end-line="5" selection-end-column="77" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/asset/ts/helperDOM.ts">
+    <entry file="file://$PROJECT_DIR$/asset/ts/display.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="30" lean-forward="true" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        <state relative-caret-position="99">
+          <caret line="40" column="73" lean-forward="true" selection-start-line="40" selection-start-column="73" selection-end-line="40" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/ts/controller.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="77" column="19" selection-start-line="77" selection-start-column="19" selection-end-line="77" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/ts/budget.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="39" column="57" lean-forward="true" selection-start-line="39" selection-start-column="57" selection-end-line="39" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" column="71" lean-forward="true" selection-start-line="80" selection-start-column="71" selection-end-line="80" selection-end-column="71" />
+        <state relative-caret-position="172">
+          <caret line="79" column="89" lean-forward="true" selection-start-line="79" selection-start-column="89" selection-end-line="79" selection-end-column="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/ts/item.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/asset/ts/itemList.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="72" column="15" lean-forward="true" selection-start-line="72" selection-start-column="15" selection-end-line="72" selection-end-column="15" />
         </state>
       </provider>
     </entry>
