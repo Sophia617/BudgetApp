@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", function(event) {
     
     initialiseDOM();
+    initialiseInputField();
     let appController = new Controller();
+    appController.displayCurrentDate();
     
     // Variable from User Input Field
     let type, description, value;
@@ -12,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         description = descTXTBOX.value;
         value = parseFloat(valTXTBOX.value);
         appController.addItem(type, description, value);
+        initialiseInputField();
     });
     
     // When Delete Button Clicked from --> Remove the Item from the List
@@ -21,4 +24,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         let idElement = event.target.parentNode.parentNode.parentNode.parentNode.id;
         appController.removeItem(idElement);
     });
+    
+    // Initializing Input Field
+    function initialiseInputField () {
+        addType.value ='inc';
+        descTXTBOX.value = '';
+        valTXTBOX.value ='';
+    }
 });

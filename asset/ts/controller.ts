@@ -1,11 +1,12 @@
 class Controller {
     
-    incomeArray: IItemList;
-    expenseArray: IItemList;
-    budget: Budget;
-    displayBudget: IDiplay;
-    displayIncomeItem: IDiplay;
-    displayExpenseItem: IDiplay;
+    protected incomeArray: IItemList;
+    protected expenseArray: IItemList;
+    protected budget: Budget;
+    protected displayBudget: IDiplay;
+    protected displayIncomeItem: IDiplay;
+    protected displayExpenseItem: IDiplay;
+    protected displayDate: IDiplay;
     
     constructor(){
         this.incomeArray = new IncomeArray();
@@ -14,7 +15,9 @@ class Controller {
         this.displayBudget = new DisplayBudget(this.budget);
         this.displayIncomeItem = new DisplayIncomeItem(this.incomeArray);
         this.displayExpenseItem = new DisplayExpenseItem(this.expenseArray);
+        this.displayDate = new DisplayDate();
     }
+    
     
     /*******************************************
      *              ADD NEW ITEM
@@ -25,12 +28,12 @@ class Controller {
         // Pass the Item to Income List
         if (type === 'inc') {
             this.incomeArray.addItem(description, value);
-            this.displayIncomeField();
+            this.displayAddIncomeItem();
         }
         // Pass the Item to Expense List
         if (type === 'exp') {
             this.expenseArray.addItem(description, value);
-            this.displayExpenseField();
+            this.displayAddExpenseItem();
         }
         // Notify Budget For change in ItemArray
         this.updateBudget(type, value);
@@ -65,10 +68,7 @@ class Controller {
      * *****************************************/
     
     // Notify Budget Object for change
-    public updateBudget (type:string, value: number){
-    
-        console.log(type + ' ' + value);
-        console.log(type ==='income') ;
+    private updateBudget (type:string, value: number){
         
         // Update Total Income in the Budget Object
         if (type === 'inc' || 'income') {
@@ -87,27 +87,31 @@ class Controller {
      * *****************************************/
     
     // Display Budget Field on UI
-    public displayBudgetField(){
+    public displayCurrentDate(){
+        this.displayDate.display();
+    }
+    
+    private displayBudgetField(){
          this.displayBudget.display();
     }
     
     // Display Income Field on UI
-    public displayIncomeField() : void {
+    private displayAddIncomeItem() : void {
         this.displayIncomeItem.display();
     }
     
     // Display Expense Field on UI
-    public displayExpenseField(): void {
+    private displayAddExpenseItem(): void {
         this.displayExpenseItem.display();
     }
     
     // Remove Income Item on UI
-    public displayDeleteIncomeItem(idElement: string): void {
+    private displayDeleteIncomeItem(idElement: string): void {
         this.displayIncomeItem.removeDisplay(idElement);
     }
     
     // Remove Expense Item on UI
-    public displayDeleteExpenseItem(idElement: string): void {
+    private displayDeleteExpenseItem(idElement: string): void {
         this.displayExpenseItem.removeDisplay(idElement);
     }
 }

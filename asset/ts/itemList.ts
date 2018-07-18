@@ -11,12 +11,15 @@ class IncomeArray implements IItemList {
     
     // Instance Variable Field
     private _incomeList: Array<IItem> =[];
-    private _id: number =0; // this id will be used in DOM display ID and Item ID
+    private _id: number; // this id will be used in DOM display ID and Item ID
     
     // Create Income Item and push to the Income Array
     public addItem(description: string, value: number):void {
         // Set ID - last item ID + 1
         let i = this._incomeList.length;
+        if (i === 0 ){
+            this._id =0;
+        }
         if (i != 0) {
            this._id = this._incomeList[i-1].id +1;
            console.log(this._id);

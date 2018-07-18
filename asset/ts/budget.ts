@@ -14,23 +14,22 @@ class Budget {
         this._totalBudget =0;
     }
     
-    // Methods to calculate budget
+    // Calculate Total Income
     public updateTotalIncome(type: string, incomeValue: number): void {
         
         if (type === 'inc') {
-            console.log('i am adding ITem to budget');
             this._totalIncome += incomeValue;
             this._totalBudget += incomeValue;
         }
         
         if (type === 'income') {
-            console.log ('im removing my income item in budget');
             this._totalIncome -= incomeValue;
             this._totalBudget -= incomeValue;
         }
        this.calcExpensePercentage();
     }
     
+    // Calculate Total Expense
     public updateTotalExpense(type: string, expenseValue: number): void {
         if (type === 'exp'){
             this._totalExpense += expenseValue;
@@ -41,18 +40,15 @@ class Budget {
             this._totalExpense -= expenseValue;
             this._totalBudget += expenseValue;
         }
-        
         this.calcExpensePercentage();
     }
     
+    // Calculate Percentage
     public calcExpensePercentage(){
-        
-        if ( this._totalExpense!=0) {
-            this._expensePercentage= (this._totalExpense/this._totalIncome)*100;
+        if (this._totalExpense === 0) {
+            this._expensePercentage = 0;
         }
-        else {
-           this._expensePercentage = 0;
-        }
+        this._expensePercentage= (this._totalExpense/this._totalIncome)*100;
     }
     
     // Getter

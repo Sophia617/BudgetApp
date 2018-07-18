@@ -2,12 +2,14 @@ var IncomeArray = /** @class */ (function () {
     function IncomeArray() {
         // Instance Variable Field
         this._incomeList = [];
-        this._id = 0; // this id will be used in DOM display ID and Item ID
     }
     // Create Income Item and push to the Income Array
     IncomeArray.prototype.addItem = function (description, value) {
         // Set ID - last item ID + 1
         var i = this._incomeList.length;
+        if (i === 0) {
+            this._id = 0;
+        }
         if (i != 0) {
             this._id = this._incomeList[i - 1].id + 1;
             console.log(this._id);

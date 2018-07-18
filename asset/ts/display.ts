@@ -5,7 +5,7 @@ interface IDiplay {
 
 class DisplayIncomeItem implements IDiplay {
     
-    incomeArray: IItemList;
+    private incomeArray: IItemList;
     
     constructor(incomeArray: IItemList){
         this.incomeArray = incomeArray;
@@ -41,7 +41,7 @@ class DisplayIncomeItem implements IDiplay {
 
 class DisplayExpenseItem implements IDiplay {
     
-    expenseArray: IItemList;
+    private expenseArray: IItemList;
     
     constructor(expenseArray: IItemList){
         this.expenseArray = expenseArray;
@@ -75,9 +75,27 @@ class DisplayExpenseItem implements IDiplay {
     }
 }
 
+class DisplayDate implements IDiplay {
+    
+    // Month Array
+    private monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    
+    public display(){
+        // Get Month and Year
+        let currentDate = new Date();
+        let month = currentDate.getMonth();
+        let year = currentDate.getUTCFullYear();
+        
+        // Display month
+        currentMonthYear.innerText = `${this.monthNames[month]} ${year}`;
+    }
+    
+    public removeDisplay(idElement: string): void { }
+}
+
 class DisplayBudget implements IDiplay {
     
-    budget:Budget;
+    private budget:Budget;
     
     constructor(budget: Budget){
         this.budget =budget;
@@ -90,6 +108,8 @@ class DisplayBudget implements IDiplay {
         let totalIncome = this.budget.getTotalIncome();
         let totalExpense = this.budget.getTotalExpense();
         let expPercent = this.budget.getExpensePercent();
+        
+        console.log (totalExpense);
         
         // Display Total Budget Field
         if (totalBudget >= 0) {

@@ -6,6 +6,7 @@ var Controller = /** @class */ (function () {
         this.displayBudget = new DisplayBudget(this.budget);
         this.displayIncomeItem = new DisplayIncomeItem(this.incomeArray);
         this.displayExpenseItem = new DisplayExpenseItem(this.expenseArray);
+        this.displayDate = new DisplayDate();
     }
     /*******************************************
      *              ADD NEW ITEM
@@ -15,12 +16,12 @@ var Controller = /** @class */ (function () {
         // Pass the Item to Income List
         if (type === 'inc') {
             this.incomeArray.addItem(description, value);
-            this.displayIncomeField();
+            this.displayAddIncomeItem();
         }
         // Pass the Item to Expense List
         if (type === 'exp') {
             this.expenseArray.addItem(description, value);
-            this.displayExpenseField();
+            this.displayAddExpenseItem();
         }
         // Notify Budget For change in ItemArray
         this.updateBudget(type, value);
@@ -50,8 +51,6 @@ var Controller = /** @class */ (function () {
      * *****************************************/
     // Notify Budget Object for change
     Controller.prototype.updateBudget = function (type, value) {
-        console.log(type + ' ' + value);
-        console.log(type === 'income');
         // Update Total Income in the Budget Object
         if (type === 'inc' || 'income') {
             this.budget.updateTotalIncome(type, value);
@@ -66,15 +65,18 @@ var Controller = /** @class */ (function () {
      *             DISPLAY (VIEW)
      * *****************************************/
     // Display Budget Field on UI
+    Controller.prototype.displayCurrentDate = function () {
+        this.displayDate.display();
+    };
     Controller.prototype.displayBudgetField = function () {
         this.displayBudget.display();
     };
     // Display Income Field on UI
-    Controller.prototype.displayIncomeField = function () {
+    Controller.prototype.displayAddIncomeItem = function () {
         this.displayIncomeItem.display();
     };
     // Display Expense Field on UI
-    Controller.prototype.displayExpenseField = function () {
+    Controller.prototype.displayAddExpenseItem = function () {
         this.displayExpenseItem.display();
     };
     // Remove Income Item on UI

@@ -5,20 +5,19 @@ var Budget = /** @class */ (function () {
         this._totalExpense = 0;
         this._totalBudget = 0;
     }
-    // Methods to calculate budget
+    // Calculate Total Income
     Budget.prototype.updateTotalIncome = function (type, incomeValue) {
         if (type === 'inc') {
-            console.log('i am adding ITem to budget');
             this._totalIncome += incomeValue;
             this._totalBudget += incomeValue;
         }
         if (type === 'income') {
-            console.log('im removing my income item in budget');
             this._totalIncome -= incomeValue;
             this._totalBudget -= incomeValue;
         }
         this.calcExpensePercentage();
     };
+    // Calculate Total Expense
     Budget.prototype.updateTotalExpense = function (type, expenseValue) {
         if (type === 'exp') {
             this._totalExpense += expenseValue;
@@ -30,13 +29,12 @@ var Budget = /** @class */ (function () {
         }
         this.calcExpensePercentage();
     };
+    // Calculate Percentage
     Budget.prototype.calcExpensePercentage = function () {
-        if (this._totalExpense != 0) {
-            this._expensePercentage = (this._totalExpense / this._totalIncome) * 100;
-        }
-        else {
+        if (this._totalExpense === 0) {
             this._expensePercentage = 0;
         }
+        this._expensePercentage = (this._totalExpense / this._totalIncome) * 100;
     };
     // Getter
     Budget.prototype.getTotalIncome = function () {

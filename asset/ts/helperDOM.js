@@ -9,6 +9,7 @@ var totalExpensePercentField;
 var incomeField;
 var expenseField;
 var container;
+var currentMonthYear;
 function initialiseDOM() {
     // Input Field DOM
     addType = document.querySelector('.add__type');
@@ -25,4 +26,6 @@ function initialiseDOM() {
     expenseField = document.querySelector('.expenses__list');
     // Delete Button
     container = document.querySelector('.container');
+    // Month and Year Field
+    currentMonthYear = document.querySelector('.budget__title--month');
 }

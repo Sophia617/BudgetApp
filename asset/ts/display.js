@@ -38,6 +38,22 @@ var DisplayExpenseItem = /** @class */ (function () {
     };
     return DisplayExpenseItem;
 }());
+var DisplayDate = /** @class */ (function () {
+    function DisplayDate() {
+        // Month Array
+        this.monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    }
+    DisplayDate.prototype.display = function () {
+        // Get Month and Year
+        var currentDate = new Date();
+        var month = currentDate.getMonth();
+        var year = currentDate.getUTCFullYear();
+        // Display month
+        currentMonthYear.innerText = this.monthNames[month] + " " + year;
+    };
+    DisplayDate.prototype.removeDisplay = function (idElement) { };
+    return DisplayDate;
+}());
 var DisplayBudget = /** @class */ (function () {
     function DisplayBudget(budget) {
         this.budget = budget;
@@ -48,6 +64,7 @@ var DisplayBudget = /** @class */ (function () {
         var totalIncome = this.budget.getTotalIncome();
         var totalExpense = this.budget.getTotalExpense();
         var expPercent = this.budget.getExpensePercent();
+        console.log(totalExpense);
         // Display Total Budget Field
         if (totalBudget >= 0) {
             totalBudgetField.innerHTML = "+ " + (totalBudget).toFixed(2);
