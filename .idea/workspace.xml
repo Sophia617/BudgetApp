@@ -3,18 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9dd50fe4-c76a-4db3-8da0-99d28cdb67a2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ts/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ts/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ts/budget.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/budget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ts/budget.ts" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/budget.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ts/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ts/controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asset/ts/display.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/display.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/asset/ts/display.ts" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/display.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ts/helperDOM.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/helperDOM.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ts/helperDOM.ts" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/helperDOM.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ts/itemList.js" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/itemList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/asset/ts/itemList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/asset/ts/itemList.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
+            <state relative-caret-position="105">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -42,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/asset/ts/helperDOM.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -60,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/asset/ts/controller.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -77,7 +67,7 @@
       <file leaf-file-name="itemList.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/asset/ts/itemList.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-444">
+            <state relative-caret-position="195">
               <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
             </state>
           </provider>
@@ -86,17 +76,17 @@
       <file leaf-file-name="budget.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/asset/ts/budget.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-313">
+            <state relative-caret-position="135">
               <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="display.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="display.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/asset/ts/display.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="112" column="10" lean-forward="true" selection-start-line="112" selection-start-column="10" selection-end-line="112" selection-end-column="10" />
+            <state relative-caret-position="309">
+              <caret line="27" column="77" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -141,11 +131,11 @@
         <option value="$PROJECT_DIR$/asset/ts/itemList.ts" />
         <option value="$PROJECT_DIR$/asset/ts/helperDOM.ts" />
         <option value="$PROJECT_DIR$/asset/ts/budget.ts" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/asset/ts/app.ts" />
         <option value="$PROJECT_DIR$/asset/ts/controller.ts" />
         <option value="$PROJECT_DIR$/asset/ts/item.ts" />
         <option value="$PROJECT_DIR$/asset/ts/display.ts" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -160,7 +150,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="86" />
-    <option name="y" value="28" />
+    <option name="y" value="23" />
     <option name="width" value="1317" />
     <option name="height" value="802" />
   </component>
@@ -169,7 +159,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,22 +171,11 @@
               <item name="BudgetApp" type="462c0819:PsiDirectoryNode" />
               <item name="asset" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="BudgetApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BudgetApp" type="462c0819:PsiDirectoryNode" />
-              <item name="asset" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BudgetApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BudgetApp" type="462c0819:PsiDirectoryNode" />
-              <item name="asset" type="462c0819:PsiDirectoryNode" />
-              <item name="ts" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -253,15 +231,16 @@
       <workItem from="1531131916209" duration="266000" />
       <workItem from="1531624666590" duration="11450000" />
       <workItem from="1531639979648" duration="17958000" />
-      <workItem from="1531746334081" duration="21598000" />
+      <workItem from="1531746334081" duration="22195000" />
+      <workItem from="1531917484195" duration="929000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83116000" />
+    <option name="totallyTimeSpent" value="84642000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="86" y="28" width="1317" height="802" extended-state="0" />
+    <frame x="86" y="23" width="1317" height="802" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="7" />
@@ -269,12 +248,12 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -284,10 +263,10 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -295,12 +274,12 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -326,6 +305,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/asset/ts/display.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="101" column="76" lean-forward="true" selection-start-line="101" selection-start-column="76" selection-end-line="101" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="960">
@@ -484,17 +470,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="69" column="16" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/asset/ts/helperDOM.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -508,7 +487,7 @@
     <entry file="file://$PROJECT_DIR$/asset/ts/controller.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="42" lean-forward="true" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -521,22 +500,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/asset/ts/itemList.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-444">
+        <state relative-caret-position="195">
           <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/asset/ts/budget.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-313">
+        <state relative-caret-position="135">
           <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/asset/ts/display.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="112" column="10" lean-forward="true" selection-start-line="112" selection-start-column="10" selection-end-line="112" selection-end-column="10" />
+        <state relative-caret-position="309">
+          <caret line="27" column="77" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>

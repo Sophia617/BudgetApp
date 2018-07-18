@@ -25,7 +25,7 @@ class DisplayIncomeItem implements IDiplay {
                 <div class="right clearfix">
                      <div class="item__value">+ ${value}</div>
                      <div class="item__delete">
-                            <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                            <button class="item__delete--btn"><i class="fas fa-minus-circle"></i></button>
                       </div>
                     </div>
              </div>
@@ -61,7 +61,7 @@ class DisplayExpenseItem implements IDiplay {
                 <div class="right clearfix">
                      <div class="item__value">- ${value}</div>
                      <div class="item__delete">
-                            <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                            <button class="item__delete--btn"><i class="fas fa-minus-circle"></i></button>
                       </div>
                     </div>
              </div>

@@ -9,7 +9,7 @@ var DisplayIncomeItem = /** @class */ (function () {
         var description = this.incomeArray.getDescription();
         var value = this.incomeArray.getValue();
         // Display Income Item
-        incomeField.insertAdjacentHTML('afterend', "\n            <div class=\"item clearfix\" id=\"income-" + id + "\">\n                <div class=\"item__description\">" + description + "</div>\n                <div class=\"right clearfix\">\n                     <div class=\"item__value\">+ " + value + "</div>\n                     <div class=\"item__delete\">\n                            <button class=\"item__delete--btn\"><i class=\"ion-ios-close-outline\"></i></button>\n                      </div>\n                    </div>\n             </div>\n        ");
+        incomeField.insertAdjacentHTML('afterend', "\n            <div class=\"item clearfix\" id=\"income-" + id + "\">\n                <div class=\"item__description\">" + description + "</div>\n                <div class=\"right clearfix\">\n                     <div class=\"item__value\">+ " + value + "</div>\n                     <div class=\"item__delete\">\n                            <button class=\"item__delete--btn\"><i class=\"fas fa-minus-circle\"></i></button>\n                      </div>\n                    </div>\n             </div>\n        ");
     };
     // Remove Income Items on UI
     DisplayIncomeItem.prototype.removeDisplay = function (idElement) {
@@ -29,7 +29,7 @@ var DisplayExpenseItem = /** @class */ (function () {
         var description = this.expenseArray.getDescription();
         var value = this.expenseArray.getValue();
         // Display Expense Item
-        expenseField.insertAdjacentHTML('afterend', "\n            <div class=\"item clearfix\" id=\"expense-" + id + "\">\n                <div class=\"item__description\">" + description + "</div>\n                <div class=\"right clearfix\">\n                     <div class=\"item__value\">- " + value + "</div>\n                     <div class=\"item__delete\">\n                            <button class=\"item__delete--btn\"><i class=\"ion-ios-close-outline\"></i></button>\n                      </div>\n                    </div>\n             </div>\n        ");
+        expenseField.insertAdjacentHTML('afterend', "\n            <div class=\"item clearfix\" id=\"expense-" + id + "\">\n                <div class=\"item__description\">" + description + "</div>\n                <div class=\"right clearfix\">\n                     <div class=\"item__value\">- " + value + "</div>\n                     <div class=\"item__delete\">\n                            <button class=\"item__delete--btn\"><i class=\"fas fa-minus-circle\"></i></button>\n                      </div>\n                    </div>\n             </div>\n        ");
     };
     // Remove Expense Items on UI
     DisplayExpenseItem.prototype.removeDisplay = function (idElement) {
