@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
     addBTN.addEventListener('click', function () {
         type = addType.value;
         description = descTXTBOX.value;
-        value = parseFloat(valTXTBOX.value);
+        value = valTXTBOX.value;
         if (description === '' || value === '') {
             alert('Please enter both description and value of your item.');
         }
         else {
-            appController.addItem(type, description, value);
+            appController.addItem(type, description, parseFloat(value));
             initialiseInputField();
         }
     });
