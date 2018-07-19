@@ -1,8 +1,10 @@
+// Display Interface
 interface IDiplay {
     display(): void;
     removeDisplay(id: string): void;
 }
 
+// Display for Single Income Item
 class DisplayIncomeItem implements IDiplay {
     
     private incomeArray: IItemList;
@@ -39,6 +41,8 @@ class DisplayIncomeItem implements IDiplay {
     }
 }
 
+
+// Display for Single Expense Item
 class DisplayExpenseItem implements IDiplay {
     
     private expenseArray: IItemList;
@@ -75,6 +79,8 @@ class DisplayExpenseItem implements IDiplay {
     }
 }
 
+
+// Display for Date (Month and Year)
 class DisplayDate implements IDiplay {
     
     // Month Array
@@ -93,6 +99,7 @@ class DisplayDate implements IDiplay {
     public removeDisplay(idElement: string): void { }
 }
 
+// Display for Budget
 class DisplayBudget implements IDiplay {
     
     private budget:Budget;
@@ -109,8 +116,6 @@ class DisplayBudget implements IDiplay {
         let totalExpense = this.budget.getTotalExpense();
         let expPercent = this.budget.getExpensePercent();
         
-        console.log (totalExpense);
-        
         // Display Total Budget Field
         if (totalBudget >= 0) {
             totalBudgetField.innerHTML = `+ ${(totalBudget).toFixed(2)}`;
@@ -120,7 +125,7 @@ class DisplayBudget implements IDiplay {
         // Display Total Income and Expense Field
         totalIncomeField.innerHTML = `+ ${(totalIncome).toFixed(2)}`;
         totalExpenseField.innerHTML = `- ${(totalExpense).toFixed(2)}`;
-        totalExpensePercentField.innerHTML = `${(expPercent).toFixed(1)}%`;
+        totalExpensePercentField.innerHTML = `${Math.round(expPercent)}%`;
     }
     
     public removeDisplay(idElement: string): void { }

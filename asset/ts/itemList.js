@@ -1,3 +1,4 @@
+// List of Income Items
 var IncomeArray = /** @class */ (function () {
     function IncomeArray() {
         // Instance Variable Field
@@ -18,7 +19,7 @@ var IncomeArray = /** @class */ (function () {
         var newIncomeItem = new IncomeItem(this._id, description, value);
         this._incomeList.push(newIncomeItem);
     };
-    // Remove Item to the Income Array
+    // Remove Income Item from the Income Array
     IncomeArray.prototype.removeItem = function (id) {
         // Create new ID array using map() to get index number
         var newIdArr = this._incomeList.map(function (item) {
@@ -44,6 +45,7 @@ var IncomeArray = /** @class */ (function () {
     };
     return IncomeArray;
 }());
+// List of Expense Items
 var ExpenseArray = /** @class */ (function () {
     function ExpenseArray() {
         // Instance Variable Field
@@ -62,9 +64,8 @@ var ExpenseArray = /** @class */ (function () {
         var newExpenseItem = new ExpenseItem(this._id, description, value);
         this._expenseList.push(newExpenseItem);
     };
-    // remove Item to the Expense Array
+    // remove Expense Item from the Expense Array
     ExpenseArray.prototype.removeItem = function (id) {
-        console.log(this._expenseList);
         // Create new ID array using map() to get index number
         var newIdArr = this._expenseList.map(function (item) {
             return item.id;

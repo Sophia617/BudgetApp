@@ -1,3 +1,4 @@
+// Interface Item List
 interface IItemList {
     addItem (description: string, value: number);
     removeItem (id: number) : number;
@@ -6,7 +7,7 @@ interface IItemList {
     getValue();
 }
 
-
+// List of Income Items
 class IncomeArray implements IItemList {
     
     // Instance Variable Field
@@ -30,7 +31,7 @@ class IncomeArray implements IItemList {
         
     }
     
-    // Remove Item to the Income Array
+    // Remove Income Item from the Income Array
     public removeItem(id: number): number {
 
         // Create new ID array using map() to get index number
@@ -63,6 +64,7 @@ class IncomeArray implements IItemList {
 }
 
 
+// List of Expense Items
 class ExpenseArray implements IItemList {
     
     // Instance Variable Field
@@ -82,10 +84,9 @@ class ExpenseArray implements IItemList {
         this._expenseList.push(newExpenseItem);
     }
     
-    // remove Item to the Expense Array
+    // remove Expense Item from the Expense Array
     public removeItem(id: number): number {
         
-        console.log( this._expenseList);
         // Create new ID array using map() to get index number
         let newIdArr = this._expenseList.map(function(item){
             return item.id;

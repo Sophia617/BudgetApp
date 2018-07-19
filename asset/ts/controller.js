@@ -64,18 +64,19 @@ var Controller = /** @class */ (function () {
     /*******************************************
      *             DISPLAY (VIEW)
      * *****************************************/
-    // Display Budget Field on UI
+    // Display Date on UI
     Controller.prototype.displayCurrentDate = function () {
         this.displayDate.display();
     };
+    // Display Budget Field on UI
     Controller.prototype.displayBudgetField = function () {
         this.displayBudget.display();
     };
-    // Display Income Field on UI
+    // Display Added Income Item on UI
     Controller.prototype.displayAddIncomeItem = function () {
         this.displayIncomeItem.display();
     };
-    // Display Expense Field on UI
+    // Display Added Expense Item on UI
     Controller.prototype.displayAddExpenseItem = function () {
         this.displayExpenseItem.display();
     };

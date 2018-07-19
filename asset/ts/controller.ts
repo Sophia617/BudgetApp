@@ -86,21 +86,22 @@ class Controller {
      *             DISPLAY (VIEW)
      * *****************************************/
     
-    // Display Budget Field on UI
+    // Display Date on UI
     public displayCurrentDate(){
         this.displayDate.display();
     }
     
+    // Display Budget Field on UI
     private displayBudgetField(){
          this.displayBudget.display();
     }
     
-    // Display Income Field on UI
+    // Display Added Income Item on UI
     private displayAddIncomeItem() : void {
         this.displayIncomeItem.display();
     }
     
-    // Display Expense Field on UI
+    // Display Added Expense Item on UI
     private displayAddExpenseItem(): void {
         this.displayExpenseItem.display();
     }

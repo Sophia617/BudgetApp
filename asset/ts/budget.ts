@@ -9,9 +9,9 @@ class Budget {
     
     // Constructor
     constructor(){
-        this._totalIncome =0;
-        this._totalExpense =0;
-        this._totalBudget =0;
+        this._totalIncome = 0;
+        this._totalExpense = 0;
+        this._totalBudget = 0;
     }
     
     // Calculate Total Income
@@ -43,12 +43,14 @@ class Budget {
         this.calcExpensePercentage();
     }
     
-    // Calculate Percentage
+    // Calculate Percentage of Total Expense
     public calcExpensePercentage(){
-        if (this._totalExpense === 0) {
+        if (this._totalIncome >0 && this._totalIncome >= this._totalExpense) {
+            this._expensePercentage= (this._totalExpense/this._totalIncome)*100;
+        }
+        else {
             this._expensePercentage = 0;
         }
-        this._expensePercentage= (this._totalExpense/this._totalIncome)*100;
     }
     
     // Getter

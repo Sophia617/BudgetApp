@@ -1,3 +1,4 @@
+// Display for Single Income Item
 var DisplayIncomeItem = /** @class */ (function () {
     function DisplayIncomeItem(incomeArray) {
         this.incomeArray = incomeArray;
@@ -18,6 +19,7 @@ var DisplayIncomeItem = /** @class */ (function () {
     };
     return DisplayIncomeItem;
 }());
+// Display for Single Expense Item
 var DisplayExpenseItem = /** @class */ (function () {
     function DisplayExpenseItem(expenseArray) {
         this.expenseArray = expenseArray;
@@ -38,6 +40,7 @@ var DisplayExpenseItem = /** @class */ (function () {
     };
     return DisplayExpenseItem;
 }());
+// Display for Date (Month and Year)
 var DisplayDate = /** @class */ (function () {
     function DisplayDate() {
         // Month Array
@@ -54,6 +57,7 @@ var DisplayDate = /** @class */ (function () {
     DisplayDate.prototype.removeDisplay = function (idElement) { };
     return DisplayDate;
 }());
+// Display for Budget
 var DisplayBudget = /** @class */ (function () {
     function DisplayBudget(budget) {
         this.budget = budget;
@@ -64,7 +68,6 @@ var DisplayBudget = /** @class */ (function () {
         var totalIncome = this.budget.getTotalIncome();
         var totalExpense = this.budget.getTotalExpense();
         var expPercent = this.budget.getExpensePercent();
-        console.log(totalExpense);
         // Display Total Budget Field
         if (totalBudget >= 0) {
             totalBudgetField.innerHTML = "+ " + (totalBudget).toFixed(2);
@@ -75,7 +78,7 @@ var DisplayBudget = /** @class */ (function () {
         // Display Total Income and Expense Field
         totalIncomeField.innerHTML = "+ " + (totalIncome).toFixed(2);
         totalExpenseField.innerHTML = "- " + (totalExpense).toFixed(2);
-        totalExpensePercentField.innerHTML = (expPercent).toFixed(1) + "%";
+        totalExpensePercentField.innerHTML = Math.round(expPercent) + "%";
     };
     DisplayBudget.prototype.removeDisplay = function (idElement) { };
     return DisplayBudget;

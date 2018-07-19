@@ -29,12 +29,14 @@ var Budget = /** @class */ (function () {
         }
         this.calcExpensePercentage();
     };
-    // Calculate Percentage
+    // Calculate Percentage of Total Expense
     Budget.prototype.calcExpensePercentage = function () {
-        if (this._totalExpense === 0) {
+        if (this._totalIncome > 0 && this._totalIncome >= this._totalExpense) {
+            this._expensePercentage = (this._totalExpense / this._totalIncome) * 100;
+        }
+        else {
             this._expensePercentage = 0;
         }
-        this._expensePercentage = (this._totalExpense / this._totalIncome) * 100;
     };
     // Getter
     Budget.prototype.getTotalIncome = function () {

@@ -1,9 +1,11 @@
+// Interface Item
 interface IItem {
     id: number;
     description: string;
     value: number;
 }
 
+// Income Item
 class IncomeItem implements IItem{
     id: number;
     description: string;
@@ -16,6 +18,7 @@ class IncomeItem implements IItem{
     }
 }
 
+// Expense Item
 class ExpenseItem implements IItem {
     id: number;
     description: string;

@@ -10,8 +10,13 @@ document.addEventListener("DOMContentLoaded", function (event) {
         type = addType.value;
         description = descTXTBOX.value;
         value = parseFloat(valTXTBOX.value);
-        appController.addItem(type, description, value);
-        initialiseInputField();
+        if (description === '' || value === '') {
+            alert('Please enter both description and value of your item.');
+        }
+        else {
+            appController.addItem(type, description, value);
+            initialiseInputField();
+        }
     });
     // When Delete Button Clicked from --> Remove the Item from the List
     // Use Event Delegation to access deleteBTN that does not exist when page loaded (so cannot bind it to addEventListener)
