@@ -1,14 +1,14 @@
 // Display for Single Income Item
 var DisplayIncomeItem = /** @class */ (function () {
     function DisplayIncomeItem(incomeArray) {
-        this.incomeArray = incomeArray;
+        this._incomeArray = incomeArray;
     }
     // Display Income Items on UI
     DisplayIncomeItem.prototype.display = function () {
         // Get Income Item
-        var id = this.incomeArray.getID();
-        var description = this.incomeArray.getDescription();
-        var value = this.incomeArray.getValue();
+        var id = this._incomeArray.getID();
+        var description = this._incomeArray.getDescription();
+        var value = this._incomeArray.getValue();
         // Display Income Item
         incomeField.insertAdjacentHTML('afterend', "\n            <div class=\"item clearfix\" id=\"income-" + id + "\">\n                <div class=\"item__description\">" + description + "</div>\n                <div class=\"right clearfix\">\n                     <div class=\"item__value\">+ " + value + "</div>\n                     <div class=\"item__delete\">\n                            <button class=\"item__delete--btn\"><i class=\"fas fa-minus-circle\"></i></button>\n                      </div>\n                    </div>\n             </div>\n        ");
     };
@@ -22,14 +22,14 @@ var DisplayIncomeItem = /** @class */ (function () {
 // Display for Single Expense Item
 var DisplayExpenseItem = /** @class */ (function () {
     function DisplayExpenseItem(expenseArray) {
-        this.expenseArray = expenseArray;
+        this._expenseArray = expenseArray;
     }
     // Display Expense Items on UI
     DisplayExpenseItem.prototype.display = function () {
         // Get Expense Item
-        var id = this.expenseArray.getID();
-        var description = this.expenseArray.getDescription();
-        var value = this.expenseArray.getValue();
+        var id = this._expenseArray.getID();
+        var description = this._expenseArray.getDescription();
+        var value = this._expenseArray.getValue();
         // Display Expense Item
         expenseField.insertAdjacentHTML('afterend', "\n            <div class=\"item clearfix\" id=\"expense-" + id + "\">\n                <div class=\"item__description\">" + description + "</div>\n                <div class=\"right clearfix\">\n                     <div class=\"item__value\">- " + value + "</div>\n                     <div class=\"item__delete\">\n                            <button class=\"item__delete--btn\"><i class=\"fas fa-minus-circle\"></i></button>\n                      </div>\n                    </div>\n             </div>\n        ");
     };
@@ -44,7 +44,7 @@ var DisplayExpenseItem = /** @class */ (function () {
 var DisplayDate = /** @class */ (function () {
     function DisplayDate() {
         // Month Array
-        this.monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        this._monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     }
     DisplayDate.prototype.display = function () {
         // Get Month and Year
@@ -52,7 +52,7 @@ var DisplayDate = /** @class */ (function () {
         var month = currentDate.getMonth();
         var year = currentDate.getUTCFullYear();
         // Display month
-        currentMonthYear.innerText = this.monthNames[month] + " " + year;
+        currentMonthYear.innerText = this._monthNames[month] + " " + year;
     };
     DisplayDate.prototype.removeDisplay = function (idElement) { };
     return DisplayDate;
@@ -60,14 +60,14 @@ var DisplayDate = /** @class */ (function () {
 // Display for Budget
 var DisplayBudget = /** @class */ (function () {
     function DisplayBudget(budget) {
-        this.budget = budget;
+        this._budget = budget;
     }
     DisplayBudget.prototype.display = function () {
         // Get Total Amount of Value From the Budget
-        var totalBudget = this.budget.getTotalBudget();
-        var totalIncome = this.budget.getTotalIncome();
-        var totalExpense = this.budget.getTotalExpense();
-        var expPercent = this.budget.getExpensePercent();
+        var totalBudget = this._budget.getTotalBudget();
+        var totalIncome = this._budget.getTotalIncome();
+        var totalExpense = this._budget.getTotalExpense();
+        var expPercent = this._budget.getExpensePercent();
         // Display Total Budget Field
         if (totalBudget >= 0) {
             totalBudgetField.innerHTML = "+ " + (totalBudget).toFixed(2);

@@ -7,18 +7,18 @@ interface IDiplay {
 // Display for Single Income Item
 class DisplayIncomeItem implements IDiplay {
     
-    private incomeArray: IItemList;
+    private _incomeArray: IItemList;
     
     constructor(incomeArray: IItemList){
-        this.incomeArray = incomeArray;
+        this._incomeArray = incomeArray;
     }
     
     // Display Income Items on UI
     public display(): void {
         // Get Income Item
-        let id = this.incomeArray.getID();
-        let description = this.incomeArray.getDescription();
-        let value = this.incomeArray.getValue();
+        let id = this._incomeArray.getID();
+        let description = this._incomeArray.getDescription();
+        let value = this._incomeArray.getValue();
 
         // Display Income Item
         incomeField.insertAdjacentHTML('afterend', `
@@ -45,18 +45,18 @@ class DisplayIncomeItem implements IDiplay {
 // Display for Single Expense Item
 class DisplayExpenseItem implements IDiplay {
     
-    private expenseArray: IItemList;
+    private _expenseArray: IItemList;
     
     constructor(expenseArray: IItemList){
-        this.expenseArray = expenseArray;
+        this._expenseArray = expenseArray;
     }
     
     // Display Expense Items on UI
     public display(): void {
         // Get Expense Item
-        let id = this.expenseArray.getID();
-        let description = this.expenseArray.getDescription();
-        let value = this.expenseArray.getValue();
+        let id = this._expenseArray.getID();
+        let description = this._expenseArray.getDescription();
+        let value = this._expenseArray.getValue();
         
         // Display Expense Item
         expenseField.insertAdjacentHTML('afterend', `
@@ -84,7 +84,7 @@ class DisplayExpenseItem implements IDiplay {
 class DisplayDate implements IDiplay {
     
     // Month Array
-    private monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    private _monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
     
     public display(){
         // Get Month and Year
@@ -93,7 +93,7 @@ class DisplayDate implements IDiplay {
         let year = currentDate.getUTCFullYear();
         
         // Display month
-        currentMonthYear.innerText = `${this.monthNames[month]} ${year}`;
+        currentMonthYear.innerText = `${this._monthNames[month]} ${year}`;
     }
     
     public removeDisplay(idElement: string): void { }
@@ -102,19 +102,19 @@ class DisplayDate implements IDiplay {
 // Display for Budget
 class DisplayBudget implements IDiplay {
     
-    private budget:Budget;
+    private _budget:Budget;
     
     constructor(budget: Budget){
-        this.budget =budget;
+        this._budget =budget;
     }
     
     public display(): void {
         
         // Get Total Amount of Value From the Budget
-        let totalBudget = this.budget.getTotalBudget();
-        let totalIncome = this.budget.getTotalIncome();
-        let totalExpense = this.budget.getTotalExpense();
-        let expPercent = this.budget.getExpensePercent();
+        let totalBudget = this._budget.getTotalBudget();
+        let totalIncome = this._budget.getTotalIncome();
+        let totalExpense = this._budget.getTotalExpense();
+        let expPercent = this._budget.getExpensePercent();
         
         // Display Total Budget Field
         if (totalBudget >= 0) {

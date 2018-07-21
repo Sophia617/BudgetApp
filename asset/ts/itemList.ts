@@ -28,7 +28,6 @@ class IncomeArray implements IItemList {
         // create new item and push to Array
         let newIncomeItem = new IncomeItem(this._id, description,value);
         this._incomeList.push(newIncomeItem);
-        
     }
     
     // Remove Income Item from the Income Array
